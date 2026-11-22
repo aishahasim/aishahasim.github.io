@@ -3,152 +3,203 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Syeda Aishah Asim · Trustworthy Multimodal AI</title>
-<meta name="description" content="Syeda Aishah Asim: M.S. AI at KFUPM. Research on trustworthy vision-language models, visual sycophancy, abstention, and RAG for regulatory compliance.">
+<title>Syeda Aishah Asim · AI Engineer & Researcher</title>
+<meta name="description" content="Syeda Aishah Asim: AI engineer and researcher. I build LLM, RAG and vision-language systems, and research how to make them honest about what they know. M.S. AI, KFUPM (2027).">
+<meta property="og:title" content="Syeda Aishah Asim · AI Engineer & Researcher">
+<meta property="og:description" content="Building AI systems people can trust: production GenAI, RAG and vision-language models.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0d14;--panel:#12151f;--line:#232838;--text:#e8e9ef;--muted:#9aa0b4;--accent:#9b8cff;--accent2:#5ee0c6}
+:root{--bg:#0b0d14;--panel:#12151f;--panel2:#161a26;--line:#232838;--text:#e8e9ef;--muted:#9aa0b4;--accent:#9b8cff;--accent2:#5ee0c6;--warm:#ffb38a}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .glow{position:fixed;inset:-20% -10% auto auto;width:60vw;height:60vw;background:radial-gradient(circle,rgba(155,140,255,.18),transparent 60%);filter:blur(40px);pointer-events:none;z-index:0}
-.glow.two{inset:auto auto -25% -15%;background:radial-gradient(circle,rgba(94,224,198,.12),transparent 60%)}
-nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);background:rgba(11,13,20,.7);border-bottom:1px solid var(--line)}
-nav .in{max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
+.glow.b{inset:auto auto -25% -15%;background:radial-gradient(circle,rgba(94,224,198,.12),transparent 60%)}
+nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);background:rgba(11,13,20,.75);border-bottom:1px solid var(--line)}
+nav .in{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
 nav .logo{font-family:Fraunces,serif;font-weight:600;color:var(--text)}
-nav ul{display:flex;gap:22px;list-style:none;font-size:14px}nav ul a{color:var(--muted)}nav ul a:hover{color:var(--text);text-decoration:none}
-main{position:relative;z-index:1;max-width:1000px;margin:auto;padding:0 24px}
-.hero{padding:110px 0 80px}
-.tag{display:inline-block;font-size:13px;color:var(--accent2);border:1px solid rgba(94,224,198,.35);padding:4px 12px;border-radius:99px;margin-bottom:24px}
-h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(40px,7vw,72px);line-height:1.05;letter-spacing:-.02em}
+nav ul{display:flex;gap:20px;list-style:none;font-size:14px}nav ul a{color:var(--muted)}nav ul a:hover{color:var(--text);text-decoration:none}
+main{position:relative;z-index:1;max-width:1080px;margin:auto;padding:0 24px}
+.hero{padding:100px 0 60px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent2);border:1px solid rgba(94,224,198,.35);padding:5px 13px;border-radius:99px;margin-bottom:24px}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--accent2);box-shadow:0 0 10px var(--accent2)}
+h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(40px,7vw,74px);line-height:1.04;letter-spacing:-.02em}
 h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:720px;margin:26px 0 34px}
+.lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:760px;margin:26px 0 32px}
 .lead b{color:var(--text);font-weight:500}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{padding:11px 20px;border-radius:10px;border:1px solid var(--line);color:var(--text);font-size:15px;font-weight:500;background:var(--panel)}
+.btn{padding:11px 20px;border-radius:10px;border:1px solid var(--line);color:var(--text);font-size:15px;font-weight:500;background:var(--panel);transition:.15s}
 .btn.p{background:linear-gradient(90deg,var(--accent),#7b6cf0);border:0;color:#0b0d14}
-.btn:hover{text-decoration:none;transform:translateY(-1px)}
-section{padding:70px 0;border-top:1px solid var(--line)}
-h2{font-family:Fraunces,serif;font-weight:600;font-size:34px;margin-bottom:8px}
-.sub{color:var(--muted);margin-bottom:34px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px;transition:.2s}
+.btn:hover{text-decoration:none;transform:translateY(-1px);border-color:var(--accent)}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:56px 0 10px}
+.strip div{background:var(--panel);padding:22px}
+.strip b{display:block;font-family:Fraunces,serif;font-size:30px;line-height:1.1;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.strip span{font-size:13px;color:var(--muted)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,4vw,38px);line-height:1.15;margin-bottom:10px}
+.sub{color:var(--muted);margin-bottom:34px;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px;transition:.2s;display:flex;flex-direction:column}
 .card:hover{border-color:rgba(155,140,255,.5);transform:translateY(-2px)}
-.card h3{font-size:18px;margin-bottom:6px;line-height:1.35}
-.meta{font-size:13px;color:var(--accent2);margin-bottom:12px}
+.card h3{font-size:18px;margin-bottom:8px;line-height:1.35}
 .card p{color:var(--muted);font-size:15px}
-.stats{display:flex;gap:26px;margin-top:16px;flex-wrap:wrap}
-.stat b{display:block;font-family:Fraunces,serif;font-size:28px;color:var(--text)}
+.ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:20px;margin-bottom:16px;background:rgba(155,140,255,.14)}
+.meta{font-size:13px;color:var(--accent2);margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:16px}
+.tags span{font-size:12px;padding:3px 10px;border-radius:99px;background:var(--panel2);border:1px solid var(--line);color:var(--muted)}
+.stats{display:flex;gap:24px;margin-top:14px;flex-wrap:wrap}
+.stat b{display:block;font-family:Fraunces,serif;font-size:26px;color:var(--text)}
 .stat span{font-size:12px;color:var(--muted)}
-.pub{padding:22px 0;border-bottom:1px solid var(--line)}
-.pub:last-child{border:0}
+.label{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:6px;margin-bottom:12px}
+.l-ind{background:rgba(255,179,138,.14);color:var(--warm)}.l-res{background:rgba(155,140,255,.15);color:var(--accent)}
+.tl{position:relative;padding-left:28px}
+.tl:before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--accent2))}
+.item{position:relative;margin-bottom:32px}
+.item:before{content:"";position:absolute;left:-28px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.item h3{font-size:17px}.item .meta{margin:2px 0 6px}.item ul{color:var(--muted);font-size:15px;padding-left:18px}.item li{margin:3px 0}
+.pub{padding:22px 0;border-bottom:1px solid var(--line)}.pub:last-child{border:0}
 .pub h3{font-size:18px;font-weight:600;margin-bottom:4px}
 .pub .a{color:var(--muted);font-size:15px}.pub .a b{color:var(--text)}
 .pill{display:inline-block;font-size:12px;padding:2px 10px;border-radius:99px;background:rgba(155,140,255,.15);color:var(--accent);margin-top:8px;margin-right:6px}
-.tl{position:relative;padding-left:26px}
-.tl:before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--accent2))}
-.item{position:relative;margin-bottom:30px}
-.item:before{content:"";position:absolute;left:-26px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
-.item h3{font-size:17px}.item .meta{margin:2px 0 6px}.item p{color:var(--muted);font-size:15px}
+.story{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+.story p{color:var(--muted);margin-bottom:16px;font-size:17px}.story p b{color:var(--text);font-weight:500}
+.quote{font-family:Fraunces,serif;font-size:24px;line-height:1.35;border-left:3px solid var(--accent);padding-left:20px;color:var(--text)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font-size:14px;padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--panel)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-ul.plain{list-style:none}ul.plain li{padding:10px 0;border-bottom:1px solid var(--line);color:var(--muted)}ul.plain li b{color:var(--text);font-weight:500}
-footer{text-align:center;color:var(--muted);font-size:14px;padding:50px 0 60px;border-top:1px solid var(--line)}
-@media(max-width:720px){nav ul{display:none}.two{grid-template-columns:1fr}.hero{padding:70px 0 50px}}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.skills h4{font-size:14px;color:var(--text);margin-bottom:10px}
+ul.plain{list-style:none}ul.plain li{padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:15px}ul.plain li b{color:var(--text);font-weight:500}
+.cta{background:linear-gradient(135deg,rgba(155,140,255,.16),rgba(94,224,198,.10));border:1px solid var(--line);border-radius:22px;padding:48px;text-align:center}
+.cta h2{margin-bottom:12px}.cta p{color:var(--muted);max-width:640px;margin:0 auto 26px}
+.cta .btns{justify-content:center}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 0 60px}
+@media(max-width:820px){nav ul{display:none}.story{grid-template-columns:1fr}.hero{padding:64px 0 40px}.cta{padding:32px 22px}}
 </style>
 </head>
 <body>
-<div class="glow"></div><div class="glow two"></div>
+<div class="glow"></div><div class="glow b"></div>
 <nav><div class="in"><a class="logo" href="#">Aishah Asim</a>
-<ul><li><a href="#research">Research</a></li><li><a href="#publications">Publications</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#about">About</a></li></ul></div></nav>
+<ul><li><a href="#what">What I do</a></li><li><a href="#work">Work</a></li><li><a href="#experience">Experience</a></li><li><a href="#research">Research</a></li><li><a href="#story">About</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 <main>
+
 <header class="hero">
-<div class="tag">Open to PhD positions and research roles · 2027</div>
-<h1>Syeda Aishah Asim<br><span>Trustworthy multimodal AI</span></h1>
-<p class="lead">I study when vision-language models <b>can't see</b>, whether they <b>admit it</b>, and why they <b>cave</b> when users push back. M.S. Artificial Intelligence at KFUPM, graduating May 2027.</p>
+<div class="tag"><i></i>Open to AI/ML engineering, applied science and research roles · 2027</div>
+<h1>Syeda Aishah Asim<br><span>Building AI people can trust</span></h1>
+<p class="lead">I'm an <b>AI engineer and researcher</b>. I build LLM, RAG and vision-language systems that work in the real world, from a bank's policy chatbot to an LLM grading platform at Saudi Aramco, and I research how to make models <b>honest about what they don't know</b>. M.S. Artificial Intelligence at KFUPM, graduating May 2027.</p>
 <div class="btns">
-<a class="btn p" href="mailto:syedaaishahasim@gmail.com">Email me</a>
-<a class="btn" href="https://scholar.google.com/citations?user=JgGFu2QAAAAJ">Google Scholar</a>
-<a class="btn" href="https://github.com/aishahasim">GitHub</a>
+<a class="btn p" href="#contact">Get in touch</a>
 <a class="btn" href="https://www.linkedin.com/in/s-aishah-asim-335b191a7/">LinkedIn</a>
+<a class="btn" href="https://github.com/aishahasim">GitHub</a>
+<a class="btn" href="https://scholar.google.com/citations?user=JgGFu2QAAAAJ">Google Scholar</a>
+</div>
+<div class="strip">
+<div><b>74%</b><span>abstention on unreadable scans, up from 38%, with my VLM method</span></div>
+<div><b>82.5%</b><span>accuracy for my Arabic compliance RAG, up from 47%</span></div>
+<div><b>1.3s</b><span>to solve a 42-shift schedule in my deployed optimizer</span></div>
+<div><b>Top 5%</b><span>Silver Medal, B.E. Electrical Engineering</span></div>
 </div>
 </header>
 
-<section id="research">
-<h2>Research</h2>
-<p class="sub">Making multimodal models reliable, honest and accountable.</p>
-<div class="grid">
-<div class="card"><div class="meta">KFUPM BrainLab · 2026 – now</div>
-<h3>Graded "I don't know" in vision-language models</h3>
-<p>A linear probe on a VLM's hidden state gives a training-free grade of how damaged an image is. We use it to switch or steer models toward abstaining instead of guessing.</p>
-<div class="stats"><div class="stat"><b>38→74%</b><span>abstention on destroyed scans</span></div><div class="stat"><b>31→13%</b><span>wrong answers</span></div><div class="stat"><b>7</b><span>VLMs tested</span></div></div></div>
-<div class="card"><div class="meta">KFUPM BrainLab · ongoing</div>
-<h3>Visual sycophancy</h3>
-<p>Designing evaluations that separate perception failures from capitulation: when a model abandons correct visual evidence just to agree with a user's pushback.</p></div>
-<div class="card"><div class="meta">M.S. Graduate Project · 2026 – now</div>
-<h3>Regulation-to-code traceability</h3>
-<p>Graph-based retrieval that traces source code to GDPR requirements, with ablations isolating which component (data, retriever or model) causes hallucinations.</p></div>
+<section id="what">
+<div class="eyebrow">What I do</div>
+<h2>Engineer, researcher, communicator</h2>
+<p class="sub">I'm most useful where these meet: turning a messy problem into a system that works, measuring whether it can be trusted, and explaining it to the people who have to decide.</p>
+<div class="grid g3">
+<div class="card"><div class="ico">⚙️</div><h3>I build end-to-end AI systems</h3><p>RAG pipelines, LLM-as-judge grading, REST APIs, databases and containerized deployment. I care about the boring parts too: tests, CI/CD, failure modes and evaluation.</p><div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>LangChain</span></div></div>
+<div class="card"><div class="ico">🔬</div><h3>I make models trustworthy</h3><p>I research when vision-language models can't see, whether they admit it, and why they cave when users push back. First-author work reads reliability signals straight from a model's hidden state.</p><div class="tags"><span>VLMs</span><span>PyTorch</span><span>Evaluation</span><span>Interpretability</span></div></div>
+<div class="card"><div class="ico">🎤</div><h3>I translate AI for decision-makers</h3><p>I've presented AI architectures to Aramco's ML engineering team, advised company leadership on adopting AI, and led strategy pitches as team CEO auditing Microsoft's AI decisions.</p><div class="tags"><span>Stakeholder briefings</span><span>Strategy</span><span>Public speaking</span></div></div>
 </div>
 </section>
 
-<section id="publications">
-<h2>Publications</h2>
-<p class="sub">Peer-reviewed submissions and preprints.</p>
-<div class="pub"><h3>Seeing Is Not Saying: Graded "I Don't Know" in Medical Vision-Language Models from the Hidden State</h3>
-<div class="a"><b>S. A. Asim</b>, M. Behzad</div><span class="pill">IEEE ISBI 2027 · under review</span><span class="pill">First author</span></div>
-<div class="pub"><h3><a href="https://arxiv.org/abs/2504.13690">Analysing the Robustness of Vision-Language Models to Common Corruptions</a></h3>
-<div class="a">M. Usama, <b>S. A. Asim</b>, S. B. Ali, S. T. Wasim, U. B. Mansoor</div><span class="pill">arXiv:2504.13690 · 2025</span><span class="pill">TextVQA-C &amp; GQA-C benchmarks</span></div>
-</section>
-
-<section id="projects">
-<h2>Projects</h2>
-<p class="sub">Things I've built and taken apart.</p>
+<section id="work">
+<div class="eyebrow">Selected work</div>
+<h2>Things I've built and shipped</h2>
+<p class="sub">A mix of industry systems and research, each with a measurable result.</p>
 <div class="grid">
-<div class="card"><div class="meta">Computer Vision · Fall 2026</div><h3>Test-time defenses for robust VLMs</h3>
-<p>Reproduced R-TPT (CVPR 2025) and SS-TPT (ICML 2026) on CLIP under PGD attack: 15 views matched 63 at about 2.7× the speed. Extended evaluation to attacks on top of natural corruption.</p></div>
-<div class="card"><div class="meta">Deep Learning · Spring 2026</div><h3><a href="https://github.com/aishahasim/Intelligent-Strategies-for-Regulatory-Compliance-Checking-in-Arabic">Arabic privacy-policy compliance with RAG</a></h3>
-<p>BGE-M3 + FAISS + GPT-4o mini pipeline auditing Arabic clauses against Saudi PDPL.</p>
-<div class="stats"><div class="stat"><b>47→82.5%</b><span>category accuracy</span></div><div class="stat"><b>0→68%</b><span>compliance F1</span></div></div></div>
-<div class="card"><div class="meta">B.E. Final Year Project · Team Lead</div><h3>VLM robustness benchmarks</h3>
-<p>Built TextVQA-C and GQA-C to measure how vision-language models degrade across 19 image corruption types. Presented at the Habib University Undergraduate Research Symposium 2025.</p></div>
+<div class="card"><span class="label l-ind">Industry · Saudi Aramco</span><h3>AI assessment & feedback platform</h3><p>Designed and prototyped LLM-based grading for written work: weighted rubrics, deterministic numeric cross-checks so the LLM is never the only judge, an auditable confidence signal, adaptive practice using item response theory, and human review for formal exams. Presented the architecture to the ML and AI engineering team.</p><div class="tags"><span>LLM-as-judge</span><span>FastAPI</span><span>Human-in-the-loop</span><span>Cohen's κ validation</span></div></div>
+<div class="card"><span class="label l-ind">Industry · Habib Bank Limited</span><h3>RAG chatbot over bank policies</h3><p>Built and evaluated RAG pipelines for a question-answering assistant covering HR, credit, card and deposit policies. Tuned chunking, context length and top-k retrieval, tested how document formatting affects accuracy, and scored answers with BLEU and test-case suites.</p><div class="tags"><span>LangChain</span><span>LlamaIndex</span><span>Ollama · Llama</span><span>Vector DBs</span></div></div>
+<div class="card"><span class="label l-ind">Product · Personal project</span><h3><a href="https://github.com/aishahasim/workforce-scheduler">Responsible AI workforce scheduler</a></h3><p>An end-to-end scheduling system with a hybrid optimizer that solves 42-shift schedules in under 1.3 seconds, behind a REST API with a PostgreSQL database, containerized deployment, CI/CD and an explainability dashboard so managers can see why each shift was assigned.</p><div class="stats"><div class="stat"><b>&lt;1.3s</b><span>per 42-shift schedule</span></div></div><div class="tags"><span>Optimization</span><span>FastAPI</span><span>PostgreSQL</span><span>CI/CD</span></div></div>
+<div class="card"><span class="label l-ind">Applied AI · KFUPM</span><h3><a href="https://github.com/aishahasim/Intelligent-Strategies-for-Regulatory-Compliance-Checking-in-Arabic">Arabic privacy-policy compliance checker</a></h3><p>A cross-lingual RAG pipeline that classifies Arabic privacy-policy clauses into 10 categories and audits them against Saudi Arabia's Personal Data Protection Law.</p><div class="stats"><div class="stat"><b>47→82.5%</b><span>category accuracy</span></div><div class="stat"><b>0→68%</b><span>compliance F1</span></div></div><div class="tags"><span>BGE-M3</span><span>FAISS</span><span>GPT-4o mini</span></div></div>
+<div class="card"><span class="label l-res">Research · First author</span><h3>Teaching VLMs to say "I don't know"</h3><p>Medical vision-language models keep answering even when a scan is unreadable. I showed the model already knows: a probe on its hidden state grades image damage without training, and I use it to make the model abstain.</p><div class="stats"><div class="stat"><b>38→74%</b><span>abstention on destroyed scans</span></div><div class="stat"><b>31→13%</b><span>wrong answers</span></div></div><div class="tags"><span>7 VLMs</span><span>5 datasets</span><span>Activation steering</span></div></div>
+<div class="card"><span class="label l-res">Research · Ongoing</span><h3>Regulation-to-code traceability & visual sycophancy</h3><p>A graph-based retrieval system that traces source code to GDPR requirements, with ablations that pinpoint which component causes hallucinations. In parallel, evaluations that tell apart a model that can't see from one that sees correctly but caves to a user.</p><div class="tags"><span>Graph RAG</span><span>GDPR</span><span>Evaluation design</span></div></div>
 </div>
 </section>
 
 <section id="experience">
-<h2>Experience</h2>
-<p class="sub">Research and industry.</p>
+<div class="eyebrow">Experience</div>
+<h2>Where I've worked</h2>
+<p class="sub">Industry and research roles across Saudi Arabia and Pakistan.</p>
 <div class="tl">
-<div class="item"><h3>Graduate Researcher · KFUPM BrainLab</h3><div class="meta">Sep 2026 – present · Dhahran</div><p>Reliability and honesty of vision-language models.</p></div>
-<div class="item"><h3>Student Researcher · Saudi Aramco</h3><div class="meta">Apr – Aug 2026 · Dhahran</div><p>Designed and prototyped an LLM-based grading and feedback platform with auditable confidence signals and human-in-the-loop review.</p></div>
-<div class="item"><h3>AI Engineering Intern (Generative AI) · Habib Bank Limited</h3><div class="meta">Aug – Oct 2024 · Karachi</div><p>Built and evaluated RAG pipelines (LangChain, LlamaIndex, Llama via Ollama) for a question-answering chatbot over bank policy documents.</p></div>
-<div class="item"><h3>AI Consultant · CreativeSwan</h3><div class="meta">2019 – present</div><p>Advise company leadership on adopting AI: capabilities, limits and risks.</p></div>
+<div class="item"><h3>Graduate Researcher · KFUPM BrainLab</h3><div class="meta">Sep 2026 – present · Dhahran, Saudi Arabia</div><ul><li>First-author paper on graded abstention in medical VLMs, under review at IEEE ISBI 2027.</li><li>Designing evaluations for visual sycophancy in vision-language models.</li></ul></div>
+<div class="item"><h3>Student Researcher · Saudi Aramco</h3><div class="meta">Apr 2026 – Aug 2026 · Dhahran, Saudi Arabia</div><ul><li>Designed and prototyped an LLM grading and personalised feedback platform with auditable confidence signals and human-in-the-loop review.</li><li>Researched and presented build-vs-buy recommendations on further AI use cases to the ML and AI engineering team.</li></ul></div>
+<div class="item"><h3>AI Engineering Intern (Generative AI) · Habib Bank Limited</h3><div class="meta">Aug 2024 – Oct 2024 · Karachi, Pakistan</div><ul><li>Built and evaluated RAG pipelines for an internal policy question-answering chatbot in the Innovation and Financial Inclusion Group.</li><li>Wrote scope and functional specifications for three chatbot use cases and briefed department heads.</li></ul></div>
+<div class="item"><h3>AI Consultant · CreativeSwan</h3><div class="meta">2019 – present · Karachi, Pakistan</div><ul><li>Advise leadership teams on adopting AI: what it can do, where it fails, and how to evaluate proof-of-concepts before investing.</li></ul></div>
 </div>
 </section>
 
-<section id="about">
-<div class="two">
-<div><h2>About</h2><p class="sub">Education and recognition.</p>
-<ul class="plain">
-<li><b>M.S. Artificial Intelligence</b>, KFUPM, Saudi Arabia · 2025 – 2027</li>
-<li><b>B.E. Electrical Engineering</b> (Computer Systems), DHA Suffa University · 2021 – 2025 · CGPA 3.76, Silver Medal (top 5%)</li>
-<li><b>Dean's List</b> every semester · Merit Scholarship</li>
-<li><b>AWS SheBuilds</b> Mentorship Program, EMEA · 2026</li>
-<li><b>McKinsey Forward</b> Program · 2026</li>
-</ul></div>
-<div><h2>Beyond research</h2><p class="sub">Community and leadership.</p>
-<ul class="plain">
-<li><b>Founder &amp; Lead</b>, The Circle of Sisterhood: a peer community for KFUPM graduate students</li>
-<li><b>Marketing Team</b>, IEEE KFUPM Women in Engineering</li>
-<li><b>Panelist &amp; Speaker</b>, KFUPM Toastmasters</li>
+<section id="research">
+<div class="eyebrow">Research & publications</div>
+<h2>Trustworthy multimodal AI</h2>
+<p class="sub">My research asks one question in different forms: does the model's output match what it actually knows?</p>
+<div class="pub"><h3>Seeing Is Not Saying: Graded "I Don't Know" in Medical Vision-Language Models from the Hidden State</h3><div class="a"><b>S. A. Asim</b>, M. Behzad</div><span class="pill">IEEE ISBI 2027 · under review</span><span class="pill">First author</span></div>
+<div class="pub"><h3><a href="https://arxiv.org/abs/2504.13690">Analysing the Robustness of Vision-Language Models to Common Corruptions</a></h3><div class="a">M. Usama, <b>S. A. Asim</b>, S. B. Ali, S. T. Wasim, U. B. Mansoor</div><span class="pill">arXiv:2504.13690 · 2025</span><span class="pill">Introduced TextVQA-C &amp; GQA-C</span><span class="pill">Habib University Research Symposium 2025</span></div>
+<div class="pub"><h3>Test-Time Defenses for Adversarially Robust Vision-Language Models</h3><div class="a">Course research, KFUPM · Fall 2026</div><span class="pill">Reproduced R-TPT (CVPR '25) &amp; SS-TPT (ICML '26)</span><span class="pill">Same accuracy, ~2.7× faster</span></div>
+</section>
+
+<section id="story">
+<div class="story">
+<div>
+<div class="eyebrow">About me</div>
+<h2>A little more about me</h2>
+<p>I grew up between two countries. I went to the <b>British Grammar School in Dhahran</b>, in classrooms with friends from dozens of nationalities, then finished school and my engineering degree in <b>Karachi</b>, and came back to Saudi Arabia for my master's at <b>KFUPM</b>. Moving between systems taught me to adapt fast, and that the same idea lands differently depending on who's listening.</p>
+<p>I studied electrical engineering, and a machine learning course changed my direction. Leading my final-year project on vision-language models turned into a paper, a symposium talk and a Silver Medal. What stayed with me was that the models almost never signalled doubt, and that's what I've worked on since.</p>
+<p>Outside work, I care about access. I founded <b>The Circle of Sisterhood</b> at KFUPM, taught English to children at <b>FESWO</b> in Korangi, Karachi, and, as Head of the <b>Mental Health Society</b> in college, ran a fundraiser for mental health care and an awareness event for students and parents.</p>
+</div>
+<div>
+<p class="quote">"The most useful AI isn't the one that always answers. It's the one that tells you when it can't."</p>
+<ul class="plain" style="margin-top:30px">
+<li><b>M.S. Artificial Intelligence</b>, KFUPM · 2025 – 2027</li>
+<li><b>B.E. Electrical Engineering</b> (Computer Systems), DHA Suffa University · 2021 – 2025 · CGPA 3.76/4.00</li>
+<li><b>Silver Medal</b> (top 5%) · Dean's List every semester · Merit Scholarship</li>
+<li><b>Languages:</b> English (fluent, IELTS 8.0), Urdu</li>
 </ul>
-<h2 style="font-size:22px;margin:30px 0 14px">Toolkit</h2>
-<div class="chips"><span class="chip">PyTorch</span><span class="chip">Hugging Face</span><span class="chip">VLMs &amp; CLIP</span><span class="chip">RAG</span><span class="chip">LangChain</span><span class="chip">LlamaIndex</span><span class="chip">FAISS</span><span class="chip">FastAPI</span><span class="chip">Docker</span><span class="chip">SLURM · A100</span></div>
-</div></div>
+</div>
+</div>
+</section>
+
+<section id="leadership">
+<div class="eyebrow">Leadership, programs & certifications</div>
+<h2>Beyond the code</h2>
+<p class="sub">Programs I was selected for, communities I've built and credentials I've earned.</p>
+<div class="grid g3">
+<div class="card"><h3>Selected programs</h3><ul class="plain"><li><b>AWS SheBuilds</b> Mentorship, EMEA · 2026</li><li><b>McKinsey Forward</b> Program · 2026</li><li><b>Team CEO</b>, The Computer Vision Dialogue: strategy pitches on Microsoft's AI decisions</li></ul></div>
+<div class="card"><h3>Community & leadership</h3><ul class="plain"><li><b>Founder & Lead</b>, The Circle of Sisterhood, KFUPM</li><li><b>Marketing Team</b>, IEEE KFUPM Women in Engineering</li><li><b>Panelist & Speaker</b>, KFUPM Toastmasters</li><li><b>Head</b>, Mental Health Society · English teacher volunteer, FESWO</li></ul></div>
+<div class="card"><h3>Certifications</h3><ul class="plain"><li><b>IBM</b> AI Engineering Professional Certificate · 2026</li><li><b>Harvard</b> CS50</li><li><b>DeepLearning.AI</b>: Building &amp; Evaluating Advanced RAG, Improving Accuracy of LLM Applications, Prompt Engineering</li></ul></div>
+</div>
+</section>
+
+<section id="skills">
+<div class="eyebrow">Toolkit</div>
+<h2>Skills</h2>
+<div class="skills" style="margin-top:26px">
+<div><h4>AI & ML</h4><div class="chips"><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Hugging Face</span><span class="chip">scikit-learn</span><span class="chip">VLMs &amp; CLIP</span><span class="chip">LLM evaluation</span></div></div>
+<div><h4>LLM apps & retrieval</h4><div class="chips"><span class="chip">RAG</span><span class="chip">LangChain</span><span class="chip">LlamaIndex</span><span class="chip">FAISS</span><span class="chip">Embeddings</span><span class="chip">Prompt engineering</span></div></div>
+<div><h4>Engineering</h4><div class="chips"><span class="chip">Python</span><span class="chip">C++</span><span class="chip">SQL · PostgreSQL</span><span class="chip">FastAPI</span><span class="chip">Docker</span><span class="chip">Git · CI/CD</span><span class="chip">SLURM · A100</span></div></div>
+</div>
+</section>
+
+<section id="contact" style="border:0">
+<div class="cta">
+<h2>Let's work together</h2>
+<p>I'm finishing my M.S. in May 2027 and open to <b style="color:var(--text)">AI/ML engineer and applied scientist roles</b>, research internships and PhD positions, in Europe, the UK, Singapore or the Gulf.</p>
+<div class="btns"><a class="btn p" href="mailto:syedaaishahasim@gmail.com">syedaaishahasim@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/s-aishah-asim-335b191a7/">Connect on LinkedIn</a></div>
+</div>
 </section>
 </main>
-<footer>© 2026 Syeda Aishah Asim · <a href="mailto:syedaaishahasim@gmail.com">syedaaishahasim@gmail.com</a></footer>
+<footer>© 2026 Syeda Aishah Asim · Dhahran, Saudi Arabia</footer>
 </body></html>
