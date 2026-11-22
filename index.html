@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <title>Syeda Aishah Asim · AI Engineer & Researcher</title>
 <meta name="description" content="Syeda Aishah Asim: AI engineer and researcher. I build LLM, RAG and vision-language systems, and research how to make them honest about what they know. M.S. AI, KFUPM (2027).">
 <meta property="og:title" content="Syeda Aishah Asim · AI Engineer & Researcher">
@@ -16,19 +19,19 @@
 :root{--bg:#fff3f8;--panel:#ffffff;--panel2:#fff0f6;--line:#f6d5e5;--text:#2b1622;--muted:#7b5d6c;--accent:#d93a85;--accent2:#f27bb2;--warm:#b45f06}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font:17px/1.65 "Times New Roman",Times,serif;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .glow{position:fixed;inset:-20% -10% auto auto;width:60vw;height:60vw;background:radial-gradient(circle,rgba(255,111,174,.28),transparent 60%);filter:blur(40px);pointer-events:none;z-index:0}
 .glow.b{inset:auto auto -25% -15%;background:radial-gradient(circle,rgba(255,180,214,.35),transparent 60%)}
 nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);background:rgba(255,243,248,.82);border-bottom:1px solid var(--line)}
 nav .in{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
-nav .logo{font-family:"Times New Roman",Times,serif;font-weight:600;color:var(--text)}
+nav .logo{font-family:Fraunces,serif;font-weight:600;color:var(--text)}
 nav ul{display:flex;gap:20px;list-style:none;font-size:14px}nav ul a{color:var(--muted)}nav ul a:hover{color:var(--text);text-decoration:none}
 main{position:relative;z-index:1;max-width:1080px;margin:auto;padding:0 24px}
 .hero{padding:100px 0 60px}
 .tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);background:#fff;border:1px solid rgba(217,58,133,.35);padding:5px 13px;border-radius:99px;margin-bottom:24px}
 .tag i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent2)}
-h1{font-family:"Times New Roman",Times,serif;font-weight:600;font-size:clamp(40px,7vw,74px);line-height:1.04;letter-spacing:-.02em}
+h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(40px,7vw,74px);line-height:1.04;letter-spacing:-.02em}
 h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:760px;margin:26px 0 32px}
 .lead b{color:var(--text);font-weight:500}
@@ -38,11 +41,11 @@ h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-b
 .btn:hover{text-decoration:none;transform:translateY(-1px);border-color:var(--accent)}
 .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:56px 0 10px}
 .strip div{background:var(--panel);padding:22px}
-.strip b{display:block;font-family:"Times New Roman",Times,serif;font-size:30px;line-height:1.1;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.strip b{display:block;font-family:Fraunces,serif;font-size:30px;line-height:1.1;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .strip span{font-size:13px;color:var(--muted)}
 section{padding:72px 0;border-top:1px solid var(--line)}
 .eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
-h2{font-family:"Times New Roman",Times,serif;font-weight:600;font-size:clamp(28px,4vw,38px);line-height:1.15;margin-bottom:10px}
+h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,4vw,38px);line-height:1.15;margin-bottom:10px}
 .sub{color:var(--muted);margin-bottom:34px;max-width:720px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
 .g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
@@ -55,7 +58,7 @@ h2{font-family:"Times New Roman",Times,serif;font-weight:600;font-size:clamp(28p
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:16px}
 .tags span{font-size:12px;padding:3px 10px;border-radius:99px;background:var(--panel2);border:1px solid var(--line);color:var(--muted)}
 .stats{display:flex;gap:24px;margin-top:14px;flex-wrap:wrap}
-.stat b{display:block;font-family:"Times New Roman",Times,serif;font-size:26px;color:var(--text)}
+.stat b{display:block;font-family:Fraunces,serif;font-size:26px;color:var(--text)}
 .stat span{font-size:12px;color:var(--muted)}
 .label{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:6px;margin-bottom:12px}
 .l-ind{background:rgba(255,200,140,.25);color:var(--warm)}.l-res{background:rgba(255,111,174,.15);color:var(--accent)}
@@ -70,7 +73,7 @@ h2{font-family:"Times New Roman",Times,serif;font-weight:600;font-size:clamp(28p
 .pill{display:inline-block;font-size:12px;padding:2px 10px;border-radius:99px;background:rgba(255,111,174,.15);color:var(--accent);margin-top:8px;margin-right:6px}
 .story{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
 .story p{color:var(--muted);margin-bottom:16px;font-size:17px}.story p b{color:var(--text);font-weight:500}
-.quote{font-family:"Times New Roman",Times,serif;font-size:24px;line-height:1.35;border-left:3px solid var(--accent);padding-left:20px;color:var(--text)}
+.quote{font-family:Fraunces,serif;font-size:24px;line-height:1.35;border-left:3px solid var(--accent);padding-left:20px;color:var(--text)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font-size:14px;padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--panel)}
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
@@ -173,7 +176,7 @@ h2 .hi svg{width:38px;height:38px}
 <div class="story">
 <div>
 <div class="eyebrow">About me</div>
-<h2><span class="hi"><svg viewBox="0 0 48 48"><path d="M24 40S6 29 6 17a9 9 0 0118-3 9 9 0 0118 3c0 12-18 23-18 23z" fill="#ffd0e4" stroke="#d93a85" stroke-width="2.5" stroke-linejoin="round"/></svg></span>A little more about me</h2>
+<h2>A little more about me</h2>
 <p>I grew up between two countries. I went to the <b>British Grammar School in Dhahran</b>, in classrooms with friends from dozens of nationalities, then finished school and my engineering degree in <b>Karachi</b>, and came back to Saudi Arabia for my master's at <b>KFUPM</b>. Moving between systems taught me to adapt fast, and that the same idea lands differently depending on who's listening.</p>
 <p>I studied electrical engineering, and a machine learning course changed my direction. Leading my final-year project on vision-language models turned into a paper, a symposium talk and a Silver Medal. What stayed with me was that the models almost never signalled doubt, and that's what I've worked on since.</p>
 <p>Outside work, I care about access. I founded <b>The Circle of Sisterhood</b> at KFUPM, taught English to children at <b>FESWO</b> in Korangi, Karachi, and, as Head of the <b>Mental Health Society</b> in college, ran a fundraiser for mental health care and an awareness event for students and parents.</p>
