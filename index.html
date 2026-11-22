@@ -12,26 +12,23 @@
 <meta property="og:url" content="https://aishahasim.github.io/">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:description" content="Building AI systems people can trust: production GenAI, RAG and vision-language models.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fff3f8;--panel:#ffffff;--panel2:#fff0f6;--line:#f6d5e5;--text:#2b1622;--muted:#7b5d6c;--accent:#d93a85;--accent2:#f27bb2;--warm:#b45f06}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font:17px/1.65 "Times New Roman",Times,serif;-webkit-font-smoothing:antialiased}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .glow{position:fixed;inset:-20% -10% auto auto;width:60vw;height:60vw;background:radial-gradient(circle,rgba(255,111,174,.28),transparent 60%);filter:blur(40px);pointer-events:none;z-index:0}
 .glow.b{inset:auto auto -25% -15%;background:radial-gradient(circle,rgba(255,180,214,.35),transparent 60%)}
 nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);background:rgba(255,243,248,.82);border-bottom:1px solid var(--line)}
 nav .in{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
-nav .logo{font-family:Fraunces,serif;font-weight:600;color:var(--text)}
+nav .logo{font-family:"Times New Roman",Times,serif;font-weight:600;color:var(--text)}
 nav ul{display:flex;gap:20px;list-style:none;font-size:14px}nav ul a{color:var(--muted)}nav ul a:hover{color:var(--text);text-decoration:none}
 main{position:relative;z-index:1;max-width:1080px;margin:auto;padding:0 24px}
 .hero{padding:100px 0 60px}
 .tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);background:#fff;border:1px solid rgba(217,58,133,.35);padding:5px 13px;border-radius:99px;margin-bottom:24px}
 .tag i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent2)}
-h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(40px,7vw,74px);line-height:1.04;letter-spacing:-.02em}
+h1{font-family:"Times New Roman",Times,serif;font-weight:600;font-size:clamp(40px,7vw,74px);line-height:1.04;letter-spacing:-.02em}
 h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:760px;margin:26px 0 32px}
 .lead b{color:var(--text);font-weight:500}
@@ -41,11 +38,11 @@ h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-b
 .btn:hover{text-decoration:none;transform:translateY(-1px);border-color:var(--accent)}
 .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:56px 0 10px}
 .strip div{background:var(--panel);padding:22px}
-.strip b{display:block;font-family:Fraunces,serif;font-size:30px;line-height:1.1;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.strip b{display:block;font-family:"Times New Roman",Times,serif;font-size:30px;line-height:1.1;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .strip span{font-size:13px;color:var(--muted)}
 section{padding:72px 0;border-top:1px solid var(--line)}
 .eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
-h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,4vw,38px);line-height:1.15;margin-bottom:10px}
+h2{font-family:"Times New Roman",Times,serif;font-weight:600;font-size:clamp(28px,4vw,38px);line-height:1.15;margin-bottom:10px}
 .sub{color:var(--muted);margin-bottom:34px;max-width:720px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
 .g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
@@ -58,7 +55,7 @@ h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,4vw,38px);lin
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:16px}
 .tags span{font-size:12px;padding:3px 10px;border-radius:99px;background:var(--panel2);border:1px solid var(--line);color:var(--muted)}
 .stats{display:flex;gap:24px;margin-top:14px;flex-wrap:wrap}
-.stat b{display:block;font-family:Fraunces,serif;font-size:26px;color:var(--text)}
+.stat b{display:block;font-family:"Times New Roman",Times,serif;font-size:26px;color:var(--text)}
 .stat span{font-size:12px;color:var(--muted)}
 .label{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:6px;margin-bottom:12px}
 .l-ind{background:rgba(255,200,140,.25);color:var(--warm)}.l-res{background:rgba(255,111,174,.15);color:var(--accent)}
@@ -73,7 +70,7 @@ h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,4vw,38px);lin
 .pill{display:inline-block;font-size:12px;padding:2px 10px;border-radius:99px;background:rgba(255,111,174,.15);color:var(--accent);margin-top:8px;margin-right:6px}
 .story{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
 .story p{color:var(--muted);margin-bottom:16px;font-size:17px}.story p b{color:var(--text);font-weight:500}
-.quote{font-family:Fraunces,serif;font-size:24px;line-height:1.35;border-left:3px solid var(--accent);padding-left:20px;color:var(--text)}
+.quote{font-family:"Times New Roman",Times,serif;font-size:24px;line-height:1.35;border-left:3px solid var(--accent);padding-left:20px;color:var(--text)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font-size:14px;padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--panel)}
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
@@ -84,6 +81,18 @@ ul.plain{list-style:none}ul.plain li{padding:11px 0;border-bottom:1px solid var(
 .cta .btns{justify-content:center}
 footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 0 60px}
 @media(max-width:820px){nav ul{display:none}.story{grid-template-columns:1fr}.hero{padding:64px 0 40px}.cta{padding:32px 22px}}
+
+.doodles{position:absolute;inset:0;pointer-events:none;z-index:0}
+.dd{position:absolute;width:var(--s);opacity:.92;animation:float 6s ease-in-out infinite;filter:drop-shadow(0 6px 10px rgba(217,58,133,.15))}
+.dd svg{width:100%;height:auto;display:block}
+@keyframes float{0%,100%{transform:translateY(0) rotate(var(--r))}50%{transform:translateY(-10px) rotate(var(--r))}}
+.hero{position:relative}
+.hero>*:not(.doodles){position:relative;z-index:1}
+.ico{width:52px;height:52px;background:none!important;margin-bottom:14px}
+.ico svg{width:52px;height:52px}
+h2 .hi{display:inline-block;width:38px;vertical-align:-6px;margin-right:10px}
+h2 .hi svg{width:38px;height:38px}
+@media(max-width:820px){.doodles{display:none}}
 </style>
 </head>
 <body>
@@ -93,6 +102,8 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 0 60px}
 <main>
 
 <header class="hero">
+<div class="doodles"><div class="dd " style="right:2%;top:70px;--s:78px;--r:8deg;animation-delay:0s"><svg viewBox="0 0 48 48"><path d="M24 6v6" stroke="#d93a85" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="5" r="2.5" fill="#f27bb2"/><rect x="9" y="12" width="30" height="24" rx="9" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5"/><circle cx="18" cy="23" r="3" fill="#d93a85"/><circle cx="30" cy="23" r="3" fill="#d93a85"/><path d="M19 30c3 2 7 2 10 0" fill="none" stroke="#d93a85" stroke-width="2.3" stroke-linecap="round"/><circle cx="13" cy="28" r="2" fill="#ffb4d6"/><circle cx="35" cy="28" r="2" fill="#ffb4d6"/><path d="M6 22v6M42 22v6" stroke="#d93a85" stroke-width="2.5" stroke-linecap="round"/></svg></div><div class="dd hm" style="right:15%;top:420px;--s:58px;--r:-10deg;animation-delay:-2s"><svg viewBox="0 0 48 48"><rect x="4" y="8" width="40" height="32" rx="8" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5"/><path d="M19 19l-6 5 6 5M29 19l6 5-6 5M26 16l-4 16" fill="none" stroke="#d93a85" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="dd " style="right:5%;top:290px;--s:64px;--r:-6deg;animation-delay:-4s"><svg viewBox="0 0 48 48"><g stroke="#d93a85" stroke-width="2.5" stroke-linecap="round"><path d="M18 6v6M24 6v6M30 6v6M18 36v6M24 36v6M30 36v6M6 18h6M6 24h6M6 30h6M36 18h6M36 24h6M36 30h6"/></g><rect x="12" y="12" width="24" height="24" rx="6" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5"/><circle cx="24" cy="24" r="4.5" fill="#f27bb2"/></svg></div><div class="dd hm" style="right:24%;top:40px;--s:48px;--r:12deg;animation-delay:-1s"><svg viewBox="0 0 48 48"><path d="M24 4c2 10 6 14 16 16-10 2-14 6-16 16-2-10-6-14-16-16 10-2 14-6 16-16z" fill="#ffd0e4" stroke="#d93a85" stroke-width="2.3" stroke-linejoin="round"/><path d="M38 32c1 4 2 5 6 6-4 1-5 2-6 6-1-4-2-5-6-6 4-1 5-2 6-6z" fill="#f27bb2"/></svg></div><div class="dd hm" style="right:-1%;top:470px;--s:52px;--r:10deg;animation-delay:-3s"><svg viewBox="0 0 48 48"><path d="M24 10c-2-3-8-3-10 1-4 0-6 4-5 7-3 2-3 7 0 9-1 4 2 7 6 7 1 3 6 5 9 2V10z" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 10c2-3 8-3 10 1 4 0 6 4 5 7 3 2 3 7 0 9 1 4-2 7-6 7-1 3-6 5-9 2" fill="#fff0f6" stroke="#d93a85" stroke-width="2.5" stroke-linejoin="round"/><path d="M16 20c2 0 4 1 4 4M32 20c-2 0-4 1-4 4M17 30c2-1 4 0 5 2M31 30c-2-1-4 0-5 2" fill="none" stroke="#f27bb2" stroke-width="2" stroke-linecap="round"/></svg></div><div class="dd hm" style="right:23%;top:560px;--s:44px;--r:-12deg;animation-delay:-5s"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5"/><path d="M26 10l-10 16h8l-2 12 10-16h-8z" fill="#f27bb2" stroke="#d93a85" stroke-width="2.2" stroke-linejoin="round"/></svg></div></div>
+
 <div class="tag"><i></i>Open to AI/ML roles · PhD positions anywhere · 2027</div>
 <h1>Syeda Aishah Asim<br><span>Building AI people can trust</span></h1>
 <p class="lead">I build <b>production-oriented AI systems</b> grounded in strong mathematical foundations: LLM and RAG pipelines, vision-language models and applied ML that move beyond experiments into real use, from a bank's policy chatbot to an LLM grading platform at Saudi Aramco. My research asks how to make models <b>honest about what they don't know</b>. Electrical engineer, M.S. Artificial Intelligence at KFUPM, graduating 2027.</p>
@@ -111,18 +122,18 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 0 60px}
 
 <section id="what">
 <div class="eyebrow">What I do</div>
-<h2>Engineer, researcher, communicator</h2>
+<h2><span class="hi"><svg viewBox="0 0 48 48"><path d="M24 4c2 10 6 14 16 16-10 2-14 6-16 16-2-10-6-14-16-16 10-2 14-6 16-16z" fill="#ffd0e4" stroke="#d93a85" stroke-width="2.3" stroke-linejoin="round"/><path d="M38 32c1 4 2 5 6 6-4 1-5 2-6 6-1-4-2-5-6-6 4-1 5-2 6-6z" fill="#f27bb2"/></svg></span>Engineer, researcher, communicator</h2>
 <p class="sub">I'm most useful where these meet: turning a messy problem into a system that works, measuring whether it can be trusted, and explaining it to the people who have to decide.</p>
 <div class="grid g3">
-<div class="card"><div class="ico">⚙️</div><h3>I build end-to-end AI systems</h3><p>RAG pipelines, LLM-as-judge grading, REST APIs, databases and containerized deployment. I care about the boring parts too: tests, CI/CD, failure modes and evaluation.</p><div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>LangChain</span></div></div>
-<div class="card"><div class="ico">🔬</div><h3>I make models trustworthy</h3><p>I research when vision-language models can't see, whether they admit it, and why they cave when users push back. First-author work reads reliability signals straight from a model's hidden state.</p><div class="tags"><span>VLMs</span><span>PyTorch</span><span>Evaluation</span><span>Interpretability</span></div></div>
-<div class="card"><div class="ico">🎤</div><h3>I translate AI for decision-makers</h3><p>I've presented AI architectures and build-vs-buy recommendations to Aramco's ML engineering team, and advised company leadership on adopting AI and evaluating proof-of-concepts.</p><div class="tags"><span>Stakeholder briefings</span><span>Strategy</span><span>Public speaking</span></div></div>
+<div class="card"><div class="ico"><svg viewBox="0 0 48 48"><rect x="4" y="8" width="40" height="32" rx="8" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5"/><path d="M19 19l-6 5 6 5M29 19l6 5-6 5M26 16l-4 16" fill="none" stroke="#d93a85" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>I build end-to-end AI systems</h3><p>RAG pipelines, LLM-as-judge grading, REST APIs, databases and containerized deployment. I care about the boring parts too: tests, CI/CD, failure modes and evaluation.</p><div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>LangChain</span></div></div>
+<div class="card"><div class="ico"><svg viewBox="0 0 48 48"><path d="M4 24c6-10 14-14 20-14s14 4 20 14c-6 10-14 14-20 14S10 34 4 24z" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="24" r="7" fill="#f27bb2" stroke="#d93a85" stroke-width="2.3"/><circle cx="26.5" cy="21.5" r="2" fill="#fff"/></svg></div><h3>I make models trustworthy</h3><p>I research when vision-language models can't see, whether they admit it, and why they cave when users push back. First-author work reads reliability signals straight from a model's hidden state.</p><div class="tags"><span>VLMs</span><span>PyTorch</span><span>Evaluation</span><span>Interpretability</span></div></div>
+<div class="card"><div class="ico"><svg viewBox="0 0 48 48"><path d="M8 10h32a4 4 0 014 4v16a4 4 0 01-4 4H22l-9 7v-7H8a4 4 0 01-4-4V14a4 4 0 014-4z" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5" stroke-linejoin="round"/><circle cx="16" cy="22" r="2.6" fill="#d93a85"/><circle cx="24" cy="22" r="2.6" fill="#f27bb2"/><circle cx="32" cy="22" r="2.6" fill="#d93a85"/></svg></div><h3>I translate AI for decision-makers</h3><p>I've presented AI architectures and build-vs-buy recommendations to Aramco's ML engineering team, and advised company leadership on adopting AI and evaluating proof-of-concepts.</p><div class="tags"><span>Stakeholder briefings</span><span>Strategy</span><span>Public speaking</span></div></div>
 </div>
 </section>
 
 <section id="work">
 <div class="eyebrow">Selected work</div>
-<h2>Things I've built and shipped</h2>
+<h2><span class="hi"><svg viewBox="0 0 48 48"><g stroke="#d93a85" stroke-width="2.5" stroke-linecap="round"><path d="M18 6v6M24 6v6M30 6v6M18 36v6M24 36v6M30 36v6M6 18h6M6 24h6M6 30h6M36 18h6M36 24h6M36 30h6"/></g><rect x="12" y="12" width="24" height="24" rx="6" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5"/><circle cx="24" cy="24" r="4.5" fill="#f27bb2"/></svg></span>Things I've built and shipped</h2>
 <p class="sub">A mix of industry systems and research, each with a measurable result.</p>
 <div class="grid">
 <div class="card"><span class="label l-ind">Industry · Saudi Aramco</span><h3>AI assessment & feedback platform</h3><p>Designed and prototyped LLM-based grading for written work: weighted rubrics, deterministic numeric cross-checks so the LLM is never the only judge, an auditable confidence signal, adaptive practice using item response theory, and human review for formal exams. Presented the architecture to the ML and AI engineering team.</p><div class="tags"><span>LLM-as-judge</span><span>FastAPI</span><span>Human-in-the-loop</span><span>Cohen's κ validation</span></div></div>
@@ -138,7 +149,7 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 0 60px}
 
 <section id="experience">
 <div class="eyebrow">Experience</div>
-<h2>Where I've worked</h2>
+<h2><span class="hi"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5"/><path d="M26 10l-10 16h8l-2 12 10-16h-8z" fill="#f27bb2" stroke="#d93a85" stroke-width="2.2" stroke-linejoin="round"/></svg></span>Where I've worked</h2>
 <p class="sub">Industry and research roles across Saudi Arabia and Pakistan.</p>
 <div class="tl">
 <div class="item"><h3>Graduate Researcher · KFUPM BrainLab</h3><div class="meta">Sep 2026 – present · Dhahran, Saudi Arabia</div><ul><li>First-author paper on graded abstention in medical VLMs, under review at IEEE ISBI 2027.</li><li>Designing evaluations for visual sycophancy in vision-language models.</li></ul></div>
@@ -151,7 +162,7 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 0 60px}
 
 <section id="research">
 <div class="eyebrow">Research & publications</div>
-<h2>Trustworthy multimodal AI</h2>
+<h2><span class="hi"><svg viewBox="0 0 48 48"><path d="M24 10c-2-3-8-3-10 1-4 0-6 4-5 7-3 2-3 7 0 9-1 4 2 7 6 7 1 3 6 5 9 2V10z" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 10c2-3 8-3 10 1 4 0 6 4 5 7 3 2 3 7 0 9 1 4-2 7-6 7-1 3-6 5-9 2" fill="#fff0f6" stroke="#d93a85" stroke-width="2.5" stroke-linejoin="round"/><path d="M16 20c2 0 4 1 4 4M32 20c-2 0-4 1-4 4M17 30c2-1 4 0 5 2M31 30c-2-1-4 0-5 2" fill="none" stroke="#f27bb2" stroke-width="2" stroke-linecap="round"/></svg></span>Trustworthy multimodal AI</h2>
 <p class="sub">My research asks one question in different forms: does the model's output match what it actually knows?</p>
 <div class="pub"><h3>Seeing Is Not Saying: Graded "I Don't Know" in Medical Vision-Language Models from the Hidden State</h3><div class="a"><b>S. A. Asim</b>, M. Behzad</div><span class="pill">IEEE ISBI 2027 · under review</span><span class="pill">First author</span></div>
 <div class="pub"><h3><a href="https://arxiv.org/abs/2504.13690">Analysing the Robustness of Vision-Language Models to Common Corruptions</a></h3><div class="a">M. Usama, <b>S. A. Asim</b>, S. B. Ali, S. T. Wasim, U. B. Mansoor</div><span class="pill">arXiv:2504.13690 · 2025</span><span class="pill">Introduced TextVQA-C &amp; GQA-C</span><span class="pill">Habib University Research Symposium 2025</span></div>
@@ -162,7 +173,7 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 0 60px}
 <div class="story">
 <div>
 <div class="eyebrow">About me</div>
-<h2>A little more about me</h2>
+<h2><span class="hi"><svg viewBox="0 0 48 48"><path d="M24 40S6 29 6 17a9 9 0 0118-3 9 9 0 0118 3c0 12-18 23-18 23z" fill="#ffd0e4" stroke="#d93a85" stroke-width="2.5" stroke-linejoin="round"/></svg></span>A little more about me</h2>
 <p>I grew up between two countries. I went to the <b>British Grammar School in Dhahran</b>, in classrooms with friends from dozens of nationalities, then finished school and my engineering degree in <b>Karachi</b>, and came back to Saudi Arabia for my master's at <b>KFUPM</b>. Moving between systems taught me to adapt fast, and that the same idea lands differently depending on who's listening.</p>
 <p>I studied electrical engineering, and a machine learning course changed my direction. Leading my final-year project on vision-language models turned into a paper, a symposium talk and a Silver Medal. What stayed with me was that the models almost never signalled doubt, and that's what I've worked on since.</p>
 <p>Outside work, I care about access. I founded <b>The Circle of Sisterhood</b> at KFUPM, taught English to children at <b>FESWO</b> in Korangi, Karachi, and, as Head of the <b>Mental Health Society</b> in college, ran a fundraiser for mental health care and an awareness event for students and parents.</p>
@@ -181,7 +192,7 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 0 60px}
 
 <section id="leadership">
 <div class="eyebrow">Leadership, programs & certifications</div>
-<h2>Beyond the code</h2>
+<h2><span class="hi"><svg viewBox="0 0 48 48"><path d="M24 6v6" stroke="#d93a85" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="5" r="2.5" fill="#f27bb2"/><rect x="9" y="12" width="30" height="24" rx="9" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5"/><circle cx="18" cy="23" r="3" fill="#d93a85"/><circle cx="30" cy="23" r="3" fill="#d93a85"/><path d="M19 30c3 2 7 2 10 0" fill="none" stroke="#d93a85" stroke-width="2.3" stroke-linecap="round"/><circle cx="13" cy="28" r="2" fill="#ffb4d6"/><circle cx="35" cy="28" r="2" fill="#ffb4d6"/><path d="M6 22v6M42 22v6" stroke="#d93a85" stroke-width="2.5" stroke-linecap="round"/></svg></span>Beyond the code</h2>
 <p class="sub">Programs I was selected for, communities I've built and credentials I've earned.</p>
 <div class="grid g3">
 <div class="card"><h3>Selected programs</h3><ul class="plain"><li><b>AWS SheBuilds</b> Mentorship, EMEA · 2026</li><li><b>McKinsey Forward</b> Program · 2026: problem solving, communicating for impact, digital &amp; AI</li><li><b>SAP Dual Study Program</b>: Developing with SAP Build, apps to automation · 2026</li></ul></div>
@@ -192,7 +203,7 @@ footer{text-align:center;color:var(--muted);font-size:14px;padding:40px 0 60px}
 
 <section id="skills">
 <div class="eyebrow">Toolkit</div>
-<h2>Skills</h2>
+<h2><span class="hi"><svg viewBox="0 0 48 48"><rect x="4" y="8" width="40" height="32" rx="8" fill="#ffe1ee" stroke="#d93a85" stroke-width="2.5"/><path d="M19 19l-6 5 6 5M29 19l6 5-6 5M26 16l-4 16" fill="none" stroke="#d93a85" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Skills</h2>
 <div class="skills" style="margin-top:26px">
 <div><h4>AI & ML</h4><div class="chips"><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Hugging Face</span><span class="chip">scikit-learn</span><span class="chip">VLMs &amp; CLIP</span><span class="chip">LLM evaluation</span></div></div>
 <div><h4>LLM apps & retrieval</h4><div class="chips"><span class="chip">RAG</span><span class="chip">LangChain</span><span class="chip">LlamaIndex</span><span class="chip">FAISS</span><span class="chip">Embeddings</span><span class="chip">Prompt engineering</span></div></div>
