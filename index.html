@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syeda Aishah Asim · Trustworthy Multimodal AI</title>
+<meta name="description" content="Syeda Aishah Asim: M.S. AI at KFUPM. Research on trustworthy vision-language models, visual sycophancy, abstention, and RAG for regulatory compliance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d14;--panel:#12151f;--line:#232838;--text:#e8e9ef;--muted:#9aa0b4;--accent:#9b8cff;--accent2:#5ee0c6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.glow{position:fixed;inset:-20% -10% auto auto;width:60vw;height:60vw;background:radial-gradient(circle,rgba(155,140,255,.18),transparent 60%);filter:blur(40px);pointer-events:none;z-index:0}
+.glow.two{inset:auto auto -25% -15%;background:radial-gradient(circle,rgba(94,224,198,.12),transparent 60%)}
+nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);background:rgba(11,13,20,.7);border-bottom:1px solid var(--line)}
+nav .in{max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
+nav .logo{font-family:Fraunces,serif;font-weight:600;color:var(--text)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}nav ul a{color:var(--muted)}nav ul a:hover{color:var(--text);text-decoration:none}
+main{position:relative;z-index:1;max-width:1000px;margin:auto;padding:0 24px}
+.hero{padding:110px 0 80px}
+.tag{display:inline-block;font-size:13px;color:var(--accent2);border:1px solid rgba(94,224,198,.35);padding:4px 12px;border-radius:99px;margin-bottom:24px}
+h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(40px,7vw,72px);line-height:1.05;letter-spacing:-.02em}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:720px;margin:26px 0 34px}
+.lead b{color:var(--text);font-weight:500}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{padding:11px 20px;border-radius:10px;border:1px solid var(--line);color:var(--text);font-size:15px;font-weight:500;background:var(--panel)}
+.btn.p{background:linear-gradient(90deg,var(--accent),#7b6cf0);border:0;color:#0b0d14}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+section{padding:70px 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,serif;font-weight:600;font-size:34px;margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px;transition:.2s}
+.card:hover{border-color:rgba(155,140,255,.5);transform:translateY(-2px)}
+.card h3{font-size:18px;margin-bottom:6px;line-height:1.35}
+.meta{font-size:13px;color:var(--accent2);margin-bottom:12px}
+.card p{color:var(--muted);font-size:15px}
+.stats{display:flex;gap:26px;margin-top:16px;flex-wrap:wrap}
+.stat b{display:block;font-family:Fraunces,serif;font-size:28px;color:var(--text)}
+.stat span{font-size:12px;color:var(--muted)}
+.pub{padding:22px 0;border-bottom:1px solid var(--line)}
+.pub:last-child{border:0}
+.pub h3{font-size:18px;font-weight:600;margin-bottom:4px}
+.pub .a{color:var(--muted);font-size:15px}.pub .a b{color:var(--text)}
+.pill{display:inline-block;font-size:12px;padding:2px 10px;border-radius:99px;background:rgba(155,140,255,.15);color:var(--accent);margin-top:8px;margin-right:6px}
+.tl{position:relative;padding-left:26px}
+.tl:before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--accent2))}
+.item{position:relative;margin-bottom:30px}
+.item:before{content:"";position:absolute;left:-26px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.item h3{font-size:17px}.item .meta{margin:2px 0 6px}.item p{color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:14px;padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:var(--panel)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+ul.plain{list-style:none}ul.plain li{padding:10px 0;border-bottom:1px solid var(--line);color:var(--muted)}ul.plain li b{color:var(--text);font-weight:500}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:50px 0 60px;border-top:1px solid var(--line)}
+@media(max-width:720px){nav ul{display:none}.two{grid-template-columns:1fr}.hero{padding:70px 0 50px}}
+</style>
+</head>
+<body>
+<div class="glow"></div><div class="glow two"></div>
+<nav><div class="in"><a class="logo" href="#">Aishah Asim</a>
+<ul><li><a href="#research">Research</a></li><li><a href="#publications">Publications</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#about">About</a></li></ul></div></nav>
+<main>
+<header class="hero">
+<div class="tag">Open to PhD positions and research roles · 2027</div>
+<h1>Syeda Aishah Asim<br><span>Trustworthy multimodal AI</span></h1>
+<p class="lead">I study when vision-language models <b>can't see</b>, whether they <b>admit it</b>, and why they <b>cave</b> when users push back. M.S. Artificial Intelligence at KFUPM, graduating May 2027.</p>
+<div class="btns">
+<a class="btn p" href="mailto:syedaaishahasim@gmail.com">Email me</a>
+<a class="btn" href="https://scholar.google.com/citations?user=JgGFu2QAAAAJ">Google Scholar</a>
+<a class="btn" href="https://github.com/aishahasim">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/s-aishah-asim-335b191a7/">LinkedIn</a>
+</div>
+</header>
+
+<section id="research">
+<h2>Research</h2>
+<p class="sub">Making multimodal models reliable, honest and accountable.</p>
+<div class="grid">
+<div class="card"><div class="meta">KFUPM BrainLab · 2026 – now</div>
+<h3>Graded "I don't know" in vision-language models</h3>
+<p>A linear probe on a VLM's hidden state gives a training-free grade of how damaged an image is. We use it to switch or steer models toward abstaining instead of guessing.</p>
+<div class="stats"><div class="stat"><b>38→74%</b><span>abstention on destroyed scans</span></div><div class="stat"><b>31→13%</b><span>wrong answers</span></div><div class="stat"><b>7</b><span>VLMs tested</span></div></div></div>
+<div class="card"><div class="meta">KFUPM BrainLab · ongoing</div>
+<h3>Visual sycophancy</h3>
+<p>Designing evaluations that separate perception failures from capitulation: when a model abandons correct visual evidence just to agree with a user's pushback.</p></div>
+<div class="card"><div class="meta">M.S. Graduate Project · 2026 – now</div>
+<h3>Regulation-to-code traceability</h3>
+<p>Graph-based retrieval that traces source code to GDPR requirements, with ablations isolating which component (data, retriever or model) causes hallucinations.</p></div>
+</div>
+</section>
+
+<section id="publications">
+<h2>Publications</h2>
+<p class="sub">Peer-reviewed submissions and preprints.</p>
+<div class="pub"><h3>Seeing Is Not Saying: Graded "I Don't Know" in Medical Vision-Language Models from the Hidden State</h3>
+<div class="a"><b>S. A. Asim</b>, M. Behzad</div><span class="pill">IEEE ISBI 2027 · under review</span><span class="pill">First author</span></div>
+<div class="pub"><h3><a href="https://arxiv.org/abs/2504.13690">Analysing the Robustness of Vision-Language Models to Common Corruptions</a></h3>
+<div class="a">M. Usama, <b>S. A. Asim</b>, S. B. Ali, S. T. Wasim, U. B. Mansoor</div><span class="pill">arXiv:2504.13690 · 2025</span><span class="pill">TextVQA-C &amp; GQA-C benchmarks</span></div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<p class="sub">Things I've built and taken apart.</p>
+<div class="grid">
+<div class="card"><div class="meta">Computer Vision · Fall 2026</div><h3>Test-time defenses for robust VLMs</h3>
+<p>Reproduced R-TPT (CVPR 2025) and SS-TPT (ICML 2026) on CLIP under PGD attack: 15 views matched 63 at about 2.7× the speed. Extended evaluation to attacks on top of natural corruption.</p></div>
+<div class="card"><div class="meta">Deep Learning · Spring 2026</div><h3><a href="https://github.com/aishahasim/Intelligent-Strategies-for-Regulatory-Compliance-Checking-in-Arabic">Arabic privacy-policy compliance with RAG</a></h3>
+<p>BGE-M3 + FAISS + GPT-4o mini pipeline auditing Arabic clauses against Saudi PDPL.</p>
+<div class="stats"><div class="stat"><b>47→82.5%</b><span>category accuracy</span></div><div class="stat"><b>0→68%</b><span>compliance F1</span></div></div></div>
+<div class="card"><div class="meta">B.E. Final Year Project · Team Lead</div><h3>VLM robustness benchmarks</h3>
+<p>Built TextVQA-C and GQA-C to measure how vision-language models degrade across 19 image corruption types. Presented at the Habib University Undergraduate Research Symposium 2025.</p></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<p class="sub">Research and industry.</p>
+<div class="tl">
+<div class="item"><h3>Graduate Researcher · KFUPM BrainLab</h3><div class="meta">Sep 2026 – present · Dhahran</div><p>Reliability of vision-language models, with Dr. Muzammil Behzad.</p></div>
+<div class="item"><h3>Student Researcher · Saudi Aramco</h3><div class="meta">Apr – Aug 2026 · Dhahran</div><p>Designed and prototyped an LLM-based grading and feedback platform with auditable confidence signals and human-in-the-loop review.</p></div>
+<div class="item"><h3>AI Engineering Intern (Generative AI) · Habib Bank Limited</h3><div class="meta">Aug – Oct 2024 · Karachi</div><p>Built and evaluated RAG pipelines (LangChain, LlamaIndex, Llama via Ollama) for a question-answering chatbot over bank policy documents.</p></div>
+<div class="item"><h3>AI Consultant · CreativeSwan</h3><div class="meta">2019 – present</div><p>Advise company leadership on adopting AI: capabilities, limits and risks.</p></div>
+</div>
+</section>
+
+<section id="about">
+<div class="two">
+<div><h2>About</h2><p class="sub">Education and recognition.</p>
+<ul class="plain">
+<li><b>M.S. Artificial Intelligence</b>, KFUPM, Saudi Arabia · 2025 – 2027</li>
+<li><b>B.E. Electrical Engineering</b> (Computer Systems), DHA Suffa University · 2021 – 2025 · CGPA 3.76, Silver Medal (top 5%)</li>
+<li><b>Dean's List</b> every semester · Merit Scholarship</li>
+<li><b>AWS SheBuilds</b> Mentorship Program, EMEA · 2026</li>
+<li><b>McKinsey Forward</b> Program · 2026</li>
+</ul></div>
+<div><h2>Beyond research</h2><p class="sub">Community and leadership.</p>
+<ul class="plain">
+<li><b>Founder &amp; Lead</b>, The Circle of Sisterhood: a peer community for KFUPM graduate students</li>
+<li><b>Marketing Team</b>, IEEE KFUPM Women in Engineering</li>
+<li><b>Panelist &amp; Speaker</b>, KFUPM Toastmasters</li>
+</ul>
+<h2 style="font-size:22px;margin:30px 0 14px">Toolkit</h2>
+<div class="chips"><span class="chip">PyTorch</span><span class="chip">Hugging Face</span><span class="chip">VLMs &amp; CLIP</span><span class="chip">RAG</span><span class="chip">LangChain</span><span class="chip">LlamaIndex</span><span class="chip">FAISS</span><span class="chip">FastAPI</span><span class="chip">Docker</span><span class="chip">SLURM · A100</span></div>
+</div></div>
+</section>
+</main>
+<footer>© 2026 Syeda Aishah Asim · <a href="mailto:syedaaishahasim@gmail.com">syedaaishahasim@gmail.com</a></footer>
+</body></html>
